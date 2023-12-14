@@ -1,0 +1,87 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.465),rgba(0,0,0,0.350)),url(background.jpg);
+    background-size: cover;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.menu {
+    font-family: sans-serif;
+    font-weight: lighter;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 10px;
+}
+label {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    float: left;j
+}
+
+nav ul {
+    margin: 0px;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    line-height: 20px;
+}
+
+nav ul li a:hover {
+    display: block;
+    color: burlywood;
+    background-color: blanchedalmond;
+    box-shadow: inset 0px 0px #000;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 65px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: darkgoldenrod;
+}
+
+li > a::after { content: ' +'}
+li > a:only-child::after {
+    content: '';
+}
+
+.content h1 {
+    margin-top: 150px;
+    font-size: 60px;
+    color: beige;
+    text-align: center;
+}
+.content p {
+    font-size: 25px;
+    color: beige;
+    text-align: center;
+}
